@@ -3,55 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1:1 Session | Asmaa Ezzat</title>
+    <title>1:1 Consultation | Asmaa Ezzat</title>
     <style>
         :root { --primary: #1a2a3a; --accent: #008080; --text: #586776; --bg: #fcfcfc; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; display: flex; justify-content: center; color: var(--primary); }
-        .container { max-width: 500px; width: 100%; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .container { max-width: 500px; width: 100%; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         .back-link { text-decoration: none; color: var(--accent); font-weight: bold; font-size: 0.9rem; display: block; margin-bottom: 20px; }
-        .payment-card { background: #f8fafc; border: 1px solid #e0e6ed; border-radius: 15px; padding: 20px; margin-bottom: 30px; }
-        .instapay-label { color: var(--accent); font-weight: bold; font-size: 0.75rem; letter-spacing: 1px; }
-        .phone-num { font-size: 1.4rem; font-weight: 900; margin: 8px 0; letter-spacing: 1px; }
-        .price-box { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eef2f6; }
-        .amount { font-size: 1.3rem; font-weight: 800; }
-        .book-btn { background: var(--accent); color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; }
-        .book-btn:hover { background: #006666; transform: scale(1.05); }
-        h2 { font-size: 1.2rem; color: var(--primary); border-bottom: 2px solid #f1f5f9; padding-bottom: 8px; margin: 30px 0 15px; }
-        .content { font-size: 0.95rem; color: var(--text); line-height: 1.6; }
-        .workflow-tag { display: inline-block; background: #e0f2f1; color: var(--accent); padding: 4px 12px; border-radius: 5px; font-weight: bold; font-size: 0.8rem; margin-bottom: 10px; }
+        
+        h2 { font-size: 1.2rem; margin: 20px 0 15px; text-align: center; color: var(--primary); border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
+        
+        .option-card {
+            background: #fff;
+            border: 1px solid #eef2f6;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .option-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        
+        .service-name { font-weight: 800; font-size: 1rem; color: var(--primary); display: block; margin-bottom: 5px; }
+        .experience-tag { font-size: 0.85rem; color: var(--text); margin-bottom: 10px; display: block; }
+        
+        .info-row { display: flex; gap: 15px; margin-bottom: 15px; font-size: 0.8rem; color: #7f8c8d; }
+        .info-item { display: flex; align-items: center; gap: 5px; }
+
+        .price-row { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+        .price { font-size: 1.2rem; font-weight: 900; color: var(--accent); }
+        
+        .level-up-btn { 
+            background: var(--accent); color: white; padding: 8px 20px; border-radius: 25px; 
+            text-decoration: none; font-weight: bold; font-size: 0.85rem;
+        }
+
+        .payment-info {
+            background: #f8fafc; padding: 15px; border-radius: 10px; border: 1px dashed #cbd5e1;
+            font-size: 0.8rem; margin-top: 25px; text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="index.html" class="back-link">← Back to Services</a>
         
-        <div class="workflow-tag">Workflow: 1:1 Career Consultation</div>
-        
-        <div class="payment-card">
-            <div class="instapay-label">PAY VIA INSTAPAY / PHONE</div>
-            <div class="phone-num">01067913565</div>
-            <p style="font-size: 0.8rem; margin-top: 5px; color: var(--text);">Transfer first, then click "Book Now" to send the confirmation screenshot.</p>
-            
-            <div class="price-box">
-                <div class="amount">1,350 EGP</div>
-                <a href="https://wa.me/201067913565?text=Hi%20Asmaa,%20I%20have%20completed%20the%20transfer%20for%20the%201:1%20Session" class="book-btn">Book Now</a>
+        <h2>1:1 Career Consultation</h2>
+
+        <div class="option-card">
+            <span class="service-name">1:1 Session</span>
+            <span class="experience-tag">Personal guidance to move forward with clarity and confidence</span>
+            <div class="info-row">
+                <div class="info-item">⏱ 45 minutes</div>
+                <div class="info-item">🎥 Google Meet</div>
+            </div>
+            <div class="price-row">
+                <span class="price">1,350 EGP</span>
+                <a href="https://wa.me/201067913565?text=I%20want%20to%20book%20the%201:1%20Session" class="level-up-btn">Level Up Now</a>
             </div>
         </div>
 
-        <h2>Description</h2>
-        <div class="content">
-            Our 1:1 Consultation Service provides personalized career guidance designed to help you navigate challenges, make confident decisions, and achieve your professional goals.
+        <div class="option-card">
+            <span class="service-name">Mock Interview & Feedback</span>
+            <span class="experience-tag">Simulate a real interview and get professional evaluation</span>
+            <div class="info-row">
+                <div class="info-item">⏱ 45 minutes</div>
+                <div class="info-item">🎥 Google Meet</div>
+            </div>
+            <div class="price-row">
+                <span class="price">1,500 EGP</span>
+                <a href="https://wa.me/201067913565?text=I%20want%20to%20book%20a%20Mock%20Interview" class="level-up-btn">Level Up Now</a>
+            </div>
         </div>
 
-        <h2>What We Offer</h2>
-        <div class="content">
-            • <strong>Career Guidance:</strong> Clarity on your next move.<br>
-            • <strong>Application Support:</strong> Expert advice on standout job applications.<br>
-            • <strong>Workplace Coaching:</strong> Support in handling real-life work challenges.
-        </div>
-
-        <div style="margin-top: 30px; font-size: 0.8rem; color: #bdc3c7;">
-            Terms: Sessions cancelled <24h before time are non-refundable.
+        <div class="payment-info">
+            <strong>Payment via InstaPay: 01067913565</strong><br>
+            Please send the screenshot after payment to confirm via WhatsApp.
         </div>
     </div>
 </body>
