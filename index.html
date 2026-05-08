@@ -1,108 +1,141 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asmaa Ezzat | HR Consultant</title>
+    <title>Asmaa Ezzat | Career Mentor & HR Expert</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --accent-color: #008080; /* لون تركواز هادي */
-            --bg-color: #f8f9fa;
+            --primary-color: #1a2a3a;
+            --accent-color: #008080; 
+            --text-secondary: #586776;
+            --bg-color: #ffffff;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fcfcfc;
             margin: 0;
             padding: 0;
             color: var(--primary-color);
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
         }
         .container {
-            max-width: 500px;
+            max-width: 450px;
             width: 90%;
-            margin: 40px 0;
+            margin: 50px 0;
             text-align: center;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin-bottom: 20px;
         }
-        h1 { font-size: 1.5rem; margin-bottom: 5px; }
-        .subtitle { color: #666; margin-bottom: 25px; font-size: 0.9rem; }
+        h1 { font-size: 1.8rem; margin: 10px 0 5px; color: var(--primary-color); }
+        .title { color: var(--accent-color); font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
         
-        /* قسم الخدمات */
-        .services-grid { display: grid; gap: 15px; width: 100%; }
-        .service-card {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: 0.3s;
-            border: 1px solid #eee;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        .bio-section {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            padding: 0 10px;
         }
-        .service-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .service-card h3 { margin: 0 0 5px 0; color: var(--accent-color); font-size: 1.1rem; }
-        .service-card p { margin: 0; font-size: 0.85rem; color: #777; }
+        .bio-section strong { color: var(--primary-color); }
 
-        /* روابط التواصل */
-        .social-links { margin-top: 30px; display: flex; justify-content: center; gap: 20px; }
-        .social-links a { text-decoration: none; font-size: 1.2rem; color: var(--primary-color); }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
+        .links-grid { display: grid; gap: 12px; }
+        .link-card {
+            background: #fff;
+            padding: 18px;
+            border-radius: 12px;
             text-decoration: none;
-            margin-top: 20px;
-            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #edf2f7;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .link-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .link-card span { font-weight: 700; font-size: 1.05rem; color: var(--accent-color); margin-bottom: 4px; }
+        .link-card p { margin: 0; font-size: 0.85rem; color: var(--text-secondary); }
+
+        .social-container {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-icon {
+            text-decoration: none;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .linkedin { background: #0077b5; }
+        .tiktok { background: #000000; }
+        
+        .footer-tag {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #bdc3c7;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div style="background: #ddd; width:120px; height:120px; border-radius:50%; margin: 0 auto 20px; display:flex; align-items:center; justify-content:center;">👤</div>
+        <img src="https://via.placeholder.com/150" alt="Asmaa Ezzat" class="profile-img">
         
-        <h1>أسماء عزت</h1>
-        <p class="subtitle">Senior Talent Acquisition Specialist | HR Manager</p>
+        <h1>Asmaa Ezzat</h1>
+        <div class="title">Senior Talent Acquisition Specialist</div>
+        
+        <div class="bio-section">
+            <strong>6+ Years of HR Expertise</strong><br>
+            Professional <strong>Career Mentor & Coaching</strong> Specialist.<br>
+            Helping individuals navigate their career paths, master interviews, and build standout professional identities.
+        </div>
 
-        <div class="services-grid">
-            <a href="https://wa.me/201067913565" class="service-card">
-                <h3>استشارة مهنية 1:1</h3>
-                <p>جلسة خاصة لتخطيط مسارك الوظيفي وتطوير مهاراتك.</p>
+        <div class="links-grid">
+            <a href="https://wa.me/201067913565" class="link-card">
+                <span>1:1 Career Coaching Session</span>
+                <p>Strategic guidance to unlock your professional potential.</p>
             </a>
             
-            <a href="https://wa.me/201067913565" class="service-card">
-                <h3>مراجعة وتصميم الـ CV</h3>
-                <p>تحويل سيرتك الذاتية لنسخة احترافية تجذب الشركات.</p>
+            <a href="https://wa.me/201067913565" class="link-card">
+                <span>CV & LinkedIn Optimization</span>
+                <p>Tailored resumes that pass ATS and grab recruiters' attention.</p>
             </a>
 
-            <a href="https://wa.me/201067913565" class="service-card">
-                <h3>التحضير للمقابلات (Mock Interview)</h3>
-                <p>تدريب عملي على أسئلة المقابلات الشخصية وكيفية الإجابة عليها.</p>
+            <a href="https://wa.me/201067913565" class="link-card">
+                <span>Interview Mastery Training</span>
+                <p>Mock interviews and techniques to land your dream job.</p>
             </a>
         </div>
 
-        <a href="https://wa.me/201067913565" class="cta-button">احجزي خدمتك الآن</a>
-
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/asmaa-ezzat-9b276317b">LinkedIn</a>
-            <a href="https://www.tiktok.com/@asmaaezat358">TikTok</a>
+        <div class="social-container">
+            <a href="https://www.linkedin.com/in/asmaa-ezzat211" class="social-icon linkedin">LinkedIn</a>
+            <a href="https://www.tiktok.com/@asmaaezat358" class="social-icon tiktok">TikTok</a>
         </div>
+
+        <div class="footer-tag">BUILD YOUR FUTURE WITH ASMAA</div>
     </div>
 
 </body>
 </html>
-
