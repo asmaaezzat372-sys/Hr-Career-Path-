@@ -5,122 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asmaa Ezzat | Career Mentor</title>
     <style>
-        :root {
-            --primary: #1a2a3a;
-            --accent: #008080;
-            --text: #586776;
-            --bg: #fcfcfc;
-        }
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: var(--bg);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            max-width: 500px;
-            width: 90%;
-            margin: 40px 0;
-            background: white;
-            padding: 30px 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        .header-box {
-            background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
-            padding: 40px 20px;
-            border-radius: 15px;
-            color: var(--accent);
-            font-weight: 800;
-            font-size: 1.4rem;
-            margin-bottom: 25px;
-        }
-        h1 { font-size: 1.8rem; margin: 10px 0; color: var(--primary); }
-        .subtitle { color: var(--accent); font-weight: 600; margin-bottom: 20px; }
-        
-        .section-title {
-            text-align: left;
-            font-size: 1.2rem;
-            color: var(--primary);
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin: 30px 0 15px;
-        }
-        .content-text { text-align: left; color: var(--text); font-size: 0.95rem; line-height: 1.6; }
-        
-        .payment-box {
-            background: #f8fafc;
-            border: 1px solid #e0e6ed;
-            border-radius: 15px;
-            padding: 20px;
-            margin-top: 30px;
-            text-align: left;
-        }
-        .instapay-card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid #00808020;
-            margin-top: 10px;
-        }
-        .price-tag {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 30px;
-            padding: 20px;
-            background: #f1f5f9;
-            border-radius: 15px;
-        }
-        .amount { font-size: 1.4rem; font-weight: 800; color: var(--primary); }
-        .book-now {
-            background: var(--accent);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+        :root { --primary: #1a2a3a; --accent: #008080; --text: #586776; --bg: #fcfcfc; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; display: flex; justify-content: center; color: var(--primary); }
+        .container { max-width: 450px; width: 90%; margin: 50px 0; text-align: center; background: white; padding: 30px 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .profile-img { width: 120px; height: 120px; border-radius: 50%; background: #eee; margin: 0 auto 15px; border: 4px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 50px; color: #ccc; }
+        h1 { font-size: 1.8rem; margin: 10px 0 5px; }
+        .title { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
+        .bio { font-size: 0.95rem; color: var(--text); line-height: 1.6; margin-bottom: 30px; }
+        .links-grid { display: grid; gap: 15px; }
+        .link-card { background: white; padding: 18px; border-radius: 15px; text-decoration: none; color: var(--primary); font-weight: 800; border: 1px solid #edf2f7; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.02); text-transform: uppercase; letter-spacing: 0.5px; }
+        .link-card:hover { border-color: var(--accent); transform: translateY(-3px); background: #f9fdfd; }
+        .social-container { margin-top: 35px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+        .social-icon { text-decoration: none; color: white; padding: 10px 18px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; min-width: 80px; }
+        .linkedin { background: #0077b5; } .tiktok { background: #000; } .instagram { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); }
+        .footer-tag { margin-top: 40px; font-size: 0.7rem; color: #bdc3c7; letter-spacing: 2px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header-box">1:1 Career Consultation Session</div>
-        
+        <div class="profile-img">👤</div>
         <h1>Asmaa Ezzat</h1>
-        <div class="subtitle">Senior Talent Acquisition Specialist</div>
-
-        <div class="section-title">Description</div>
-        <p class="content-text">
-            Our 1:1 Consultation Service provides personalized career guidance designed to help you navigate challenges and achieve your professional goals.
-        </p>
-
-        <div class="section-title">What We Offer</div>
-        <div class="content-text">
-            • <strong>Career Guidance:</strong> Clarity on your next move.<br>
-            • <strong>Application Support:</strong> Expert advice on job applications.<br>
-            • <strong>Workplace Coaching:</strong> Handling real-life work challenges.
+        <div class="title">Senior Talent Acquisition Specialist</div>
+        <div class="bio">
+            <strong>6+ Years of HR Expertise</strong><br>
+            Career Mentor helping professionals navigate their paths, master interviews, and build standout professional identities.
         </div>
-
-        <div class="payment-box">
-            <div style="font-weight: bold; margin-bottom: 10px;">💳 Payment Method</div>
-            <div class="instapay-card">
-                <div style="font-size: 0.8rem; color: var(--accent); font-weight: bold;">INSTAPAY</div>
-                <div style="font-size: 1.2rem; font-weight: 800;">01067913565</div>
-            </div>
-            <p style="font-size: 0.8rem; margin-top: 10px; color: var(--text);">
-                * Transfer via InstaPay then click "Book Now" to send the screenshot.
-            </p>
+        <div class="links-grid">
+            <a href="service1.html" class="link-card">1:1 Career Consultation Session</a>
+            <a href="https://wa.me/201067913565" class="link-card">CV Writing & LinkedIn Optimization</a>
+            <a href="https://wa.me/201067913565" class="link-card">Interview Mastery Training</a>
         </div>
-
-        <div class="price-tag">
-            <div class="amount">1,350 EGP</div>
-            <a href="https://wa.me/201067913565?text=I%20have%20completed%20the%20transfer" class="book-now">Book Now</a>
+        <div class="social-container">
+            <a href="https://www.linkedin.com/in/asmaa-ezzat211" class="social-icon linkedin">LinkedIn</a>
+            <a href="https://www.tiktok.com/@asmaaezat358" class="social-icon tiktok">TikTok</a>
+            <a href="https://www.instagram.com/asmaaezzat.hr" class="social-icon instagram">Instagram</a>
         </div>
+        <div class="footer-tag">BUILD YOUR FUTURE WITH ASMAA</div>
     </div>
 </body>
 </html>
- 
+
